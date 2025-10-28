@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color:rgb(13, 233, 5);
+}
+.nav{
+    display: flex;
+    gap: 30px;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(13, 233, 5);
+}
+.nav a:hover{
+    color: white;
+}
+section{
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+#HOME{
+    background-color:#0b0b1a;
+}
+#EXPLORE{
+    background-color: #10172a;
+}
+#JOIN{
+    background-color:#132044 ;
+}
+#CONTACT{
+    background-color: #172a59;
+}
+.ceo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ceo-card{
+    background-color:  rgba(255, 255,255,0.05);
+    border: 1px solid rgba(255, 255,255,0.1);
+    border-radius: 30px;
+    padding: 50px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s;
+}
+.ceo-card:hover{
+    border-color: rgb(13,233, 5);
+}
+.ceo-card img{
+    width: 200px;
+    height:200px;
+    margin-bottom: 10px;
+}
+.button{
+    background-color: rgb(13,233,5);
+    display: inline-block;
+    padding: 10px 20px;
+    color: #0b0b1a;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: white;
+}
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(13, 233, 5);
+}
+input:focus{
+    color: rgb(13, 233, 5);
+}
+.main_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 30px;
+}
+.card{
+    background-color:  rgba(255, 255,255,0.05);
+    border: 1px solid rgba(255, 255,255,0.1);
+    border-radius: 30px;
+    padding: 50px;
+    width: 300px;
+    text-align: center;
+}
+.card img{
+    width: 200px;
+    height:200px;
+    margin-bottom: 10px;
+}
+.card h3{
+    color: rgb(13,233, 5);
+}
+.card:hover{
+    border-color: rgb(13, 233, 5);
+}
+p, label{
+    color: gold;
+}
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

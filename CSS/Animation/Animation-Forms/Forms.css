@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#parent{
+    text-align: center;
+}
+#firstname{
+    background-color: lightgoldenrodyellow;
+    transform: scale(1);
+    border: none;
+}
+#firstname:hover{
+    background-color: lightblue;
+    transform: scale(1.2);
+}
+#lastname{
+    background-color:antiquewhite;
+    transform: scale(1);
+    border: none;
+}
+#lastname:hover{
+    background-color: rgb(31, 181, 126);
+    transform: scale(1.2);
+}
+#age{
+    background-color: lightgoldenrodyellow;
+    transform: scale(1);
+    border: none;
+}
+#age:hover{
+    background-color: rgb(173, 47, 156);
+    transform: scale(1.2);
+}
+#email{
+    background-color: antiquewhite;
+    transform: scale(1);
+    border: none;
+}
+#email:hover{
+    background-color: rgb(31, 181, 126);
+    transform: scale(1.2);
+}
+#city{
+    background-color: lightgoldenrodyellow;
+    transform: scale(1);
+    border: none;
+}
+#city:hover{
+    background-color: rgb(173, 47, 156);
+    transform: scale(1.2);
+}
+#state{
+    background-color: antiquewhite;
+    transform: scale(1);
+    border: none;
+}
+#state:hover{
+    background-color: rgb(31, 181, 126);
+    transform: scale(1.2);
+}
+#country{
+    background-color: lightgoldenrodyellow;
+    transform: scale(1);
+    border: none;
+}
+#country:hover{
+    background-color: rgb(173, 47, 156);
+    transform: scale(1.2);
+}
+#submit{
+    background-color: antiquewhite;
+    transform: scale(1);
+    border: none;
+}
+#submit:hover{
+    background-color: rgb(124, 217, 19);
+    color: black;
+    transform: scale(1.2);
+}
+#reset{
+    background-color: lightgoldenrodyellow;
+    transform: scale(1);
+    border: none;
+}
+#reset:hover{
+    background-color: aquamarine;
+    transform: scale(1);
+    transition: all 1s ease-in-out;
+}

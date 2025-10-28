@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Prototype</title>
+</head>
+
+<body>
+    <script>
+        //push Method=> adding the element in last
+        const music = [1, 2, 3, 4, 5, 6]
+        music.push(7, 8, 9, 10)
+        console.log(music)
+
+        //pop Method => Remove the last Elements
+        const director = ["VetriMaaran", "ARM", "MariSelvaraj"]
+        director.pop()
+        console.log(director);
+
+        //shift => Removes the  first element in the arrary
+        const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+        number.shift()
+        console.log(number)
+
+        //unshift => Add element in the beginning of the array
+        const water = [1, 2, 3, 4, 5, 6]
+        water.unshift(10)
+        console.log(water);
+
+        //concat => Add 2 array in one array
+        let door = [12, 13, 14, 15, 16]
+        let window1 = [17, 18, 19, 20]
+        let num = door.concat(window1)
+        console.log(num);
+
+        //join => Joins all array into string
+        const ball = [1, 2, 3, 4, 5]
+        const q = ball.join("-")
+        console.log(q);
+
+        //Reverse => Reverse the array
+        const pant = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let hi = pant.reverse()
+        console.log(hi);
+
+        //slice => Copies the position of array or piece of a array
+        let mobile = ["Iphone", "Vivo", "Oppo", "Redme", "RealMe"]
+        let dude = mobile.slice(1, 4)
+        console.log(dude);
+
+        //splice => Add or remove the element in array
+        const cinema = ["LCU", "VCU", "DC", "Marvel", "TKCU"]
+        cinema.splice(2, 1)
+        console.log(cinema)
+
+        //includes => check if the values exist in array or nor
+        // returns true or false
+        const Iphone = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let you = Iphone.includes(4)
+        console.log(you);
+
+        //indexOf => it returns the index value of array
+        const we = [1, 2, 3, 4, 5, 6] //input = number
+        const one = we.indexOf(6)
+        console.log(one);
+
+        //values => Find the index of array
+        const lap = [1, 2, 3, 4, 5, 6]
+        const top1 = lap.values(2) //input= index
+        console.log(top1);
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+
+.parent {
+    width: 400px;
+    height: 100px;
+    margin: 100px;
+    background-color: blue;
+    text-align: center;
+  }
+  @media (max-width: 480px) {
+    .parent {
+      display: block;
+      background-color: red;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 600px) {
+    .parent {
+      display: none;
+    }
+  }
+  @media (min-width: 601px) and (max-width: 768px) {
+    .parent {
+      display: block;
+      background-color: green;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .parent {
+      display: none;
+    }
+  }
+  @media (min-width: 1025px) and (max-width: 1600px) {
+    .parent {
+      display: block;
+      background-color: orange;
+    }
+  }
+  @media (min-width: 1601px) {
+      .parent {
+      display: none;
+    }
+}

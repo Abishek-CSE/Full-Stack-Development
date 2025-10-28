@@ -1,0 +1,56 @@
+Arrow Function:
+
+const theater=()=>{
+console.log("Today I watch Bison");
+}
+theater()
+
+const relative=()=>{
+console.log("Waste People")
+}
+relative()
+
+const pant=()=>{
+console.log("I like black pants")
+}
+pant()
+
+const cricket=()=>{
+console.log("I Love Cricket")
+}
+cricket()
+
+const football=()=>{
+console.log("I like football")
+}
+football()
+
+const rolex=()=>{
+console.log("Expensive Watch")
+}
+rolex()
+
+const pillow=()=>{
+console.log("It is very soft")
+}
+pillow()
+
+const purse=()=>{
+console.log("I don't have money")
+}
+purse()
+
+const movie=()=>{
+console.log("I like watching Movie")
+}
+movie()
+
+const tools=()=>{
+console.log("Leo Das")
+}
+tools()
+
+const photo=()=>{
+console.log("I like to take Photo")
+}
+photo()

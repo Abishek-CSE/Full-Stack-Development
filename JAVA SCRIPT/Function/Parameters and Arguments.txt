@@ -1,0 +1,36 @@
+Parameters and Arguments:
+
+const knife=(tools)=>{
+console.log(tools)
+}
+knife("This is a tool")
+
+const remote=(button)=>{
+console.log(button)
+}
+remote("you can control TV")
+
+const Tripod=(camera)=>{
+console.log(camera)
+}
+Tripod("We can shoot a video')
+
+const coffee=(beans)=>{
+console.log(beans)
+}
+coffee("This is natural")
+
+const tshirt=(Dress)=>{
+console.log(Dress)
+}
+tshirt("Good Dress")
+
+const wire=(Charger)=>{
+console.log(charger)
+}
+Wire("This is very thin")
+
+const shorts=(Youtube)=>{
+console.log(Youtube)
+}
+shorts("This is a short format content")

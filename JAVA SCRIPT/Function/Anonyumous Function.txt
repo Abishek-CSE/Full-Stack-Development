@@ -1,0 +1,61 @@
+Anonymous Function:
+
+const door=function(){
+ console.log("You can close your door")
+}
+door()
+
+const doll=function(){
+ console.log("WE can take anytime")
+}
+doll()
+
+const light=function(){
+ console.log("Please turn on the light")
+}
+light()
+
+const bed=function(){
+ console.log("Change your bed")
+}
+bed()
+
+const paper=function(){
+ console.log("Don't waste paper")
+}
+paper()
+
+const cracker=function(){
+ console.log("Happy Diwali");
+}
+cracker()
+
+const pen=function(){
+ console.log("We can write now")
+}
+pen()
+
+const Dragon=function(){
+  console.log("This is a good Movie")
+}
+Dragon()
+
+const father=function(){
+ console.log("He can sacrifice anytime for me ")
+}
+father()
+
+const mother=function(){
+ console.log("She makes good Food")
+}
+mother()
+
+const brother=function(){
+ console.log("Good Brother")
+}
+brother()
+
+const TV=function(){
+ console.log("While festival time we were watching Movie")
+}
+TV()

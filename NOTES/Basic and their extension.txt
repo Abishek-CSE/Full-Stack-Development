@@ -1,0 +1,36 @@
+1. What is HTML and why HTML?
+HTML Hyper Text Markup Language, used to create and structure content on world wide web + Hyper Text Links that connect web pages + Markup Special tags "text to tell the browser how to display it". Language A set of rules and syntax that computers and browsers understand
+2.what are all the softwares i want use while making a html file?
+		Notepad
+		Notepad++
+		Sublime Text
+		Atom
+		Brackets
+		Visual Studio Code
+3.What is Text Editor	
+A Text Editor is a software application used to write, edit, and save text. We create HTML, CSS, or JavaScript files, we use a text editor to type the code.
+Eg: Notepad - Node Pad++ - sublime - atom - brackets - vs code
+3)What is Browser
+		Google chrome
+		Fire fox
+		Internet Explorer
+4)what is static and dynamic?
+Static-Fixed content, doesn’t change until you edit the code.
+Dynamic-Content changes automatically based on database, server, or user input.
+5)what is static webpage dynamic webpage?
+Static Webpage
+	Only written with HTML + CSS.
+	Same content for everyone.
+	Example: “About Us” page.
+Dynamic Webpage
+	Uses HTML + CSS + JavaScript + server-side (PHP, Node.js, etc.).
+	Content changes based on user, time, or data.
+	Example: Facebook feed, shopping websites.
+6)what is website and what is webpage?
+Webpage
+	A single page written with HTML.
+	Example: index.html, about.html.
+Website
+	A collection of many webpages linked together.
+	Example: Wikipedia
+7)You will make your own story in this same html file using html extensions

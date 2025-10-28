@@ -1,0 +1,38 @@
+Normal Function Declaration:
+
+function Movie(){
+ console.log("This is a Movie");
+}
+function Water(){
+ console.log("You can drink the Water");
+}
+function MobilePhone(){
+ console.log("Don't use MobilePhone for Long Time...")
+}
+function Dress(){
+ console.log("Did you get your Diwali Dress");
+}
+function classRoom(){
+ console.log("If you have any Problem, You can contact me anytime");
+}
+function popcorn(){
+ console.log(" We have different flavors of Popcorn")
+}
+function laptop(){
+ console.log("Laptop is only for Company purpose");
+}
+function number(){
+ console.log(9);
+}
+function bag(){
+ console.log("We can Back your dress now");
+}
+function food(){
+ console.log("I like Briyani");
+}
+function uno(){
+ console.log("Do you play UNO?")
+}
+function watch(){
+ console.log("Time Please");
+}

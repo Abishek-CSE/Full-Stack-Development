@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tea_shop{
+    text-align: center;
+    background-color: black;
+    color:burlywood;
+    padding: 30px;
+}
+.tea_shop:hover{
+    color: white;
+}
+#Menu{
+    background-color: burlywood;
+    color: black;
+    display: block;
+    margin: 20px auto;
+    padding: 20PX 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#Menu:hover{
+    background-color: white;
+}
+#menu_items{
+    display:none;
+}
+.items{
+    background-color: burlywood;
+    color: black;
+    font-weight: bold;
+    padding: 20px 10px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.items:hover{
+    background-color: white;
+}
+#displayItems {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-top: 3px solid burlywood;
+}
+#Order_title {
+    padding: 20px;
+    background-color: burlywood;
+    color: #333;
+    font-size: 1.5em;
+}
+#Order_title:hover{
+    color: black;
+}
+#order_image {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#payment{
+    background-color: burlywood;
+    color: black;
+    display: block;
+    margin: 20px auto;
+    padding: 20PX 10px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+#payment:hover{
+    background-color: white;
+}
+
+  
