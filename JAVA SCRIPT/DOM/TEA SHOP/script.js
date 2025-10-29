@@ -1,6 +1,5 @@
 const MenuButton = document.getElementById("Menu")
 const MenuItems =document.getElementById("menu_items")
-
 MenuButton.addEventListener("click",()=>{
     MenuButton.style.display ="none"
     MenuItems.style.display ="block"
