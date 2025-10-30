@@ -133,5 +133,7 @@ GrapeJuice.addEventListener("click",()=>{
 const payment = document.getElementById("payment")
 payment.addEventListener("click",()=>{
     order.textContent = "PAYMENT SUCCESSFUL! Your order is being prepared. Thank you!"
+    alert("Pay Rupees 10")
+    
     orderImage.style.display ="none"
 })
