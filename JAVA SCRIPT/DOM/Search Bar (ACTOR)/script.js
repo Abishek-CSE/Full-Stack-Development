@@ -9,7 +9,7 @@ SearchButton.addEventListener("click",(e)=>{
     if(data === "Ajith" || data === "ajith" || data === "Thala" || data === "AK"){
         image.src = "Assests/Ajith.jpg"
     }
-    else if(data === "Simbu" || data ==="STR" || data ==="Atman"){
+    else if(data === "Simbu" || data ==="STR" || data ==="Atman" || data === "str"){
         image.src ="Assests/STR.jpg"
     }
     else if(data === "Dhanush"){
@@ -44,6 +44,6 @@ SearchButton.addEventListener("click",(e)=>{
     }
     else {
         line.textContent ="YOUR SEARCH IS Not Found"
-        image.src =""
+        image.src =" "
     }
 })
