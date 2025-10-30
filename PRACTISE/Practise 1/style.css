@@ -10,13 +10,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8PX 16px;
-    font-size: 14px;
-    
+    padding: 5px;
+    font-size: 14px; 
 }
 .heading p {
-    margin-left: 500px;
-    
+    margin-left: 500px; 
 }
 .promo a{
     color: white;
@@ -24,8 +22,32 @@
     margin: 0 6px;
     margin-left: 120px;
 }
-
 .country_currency{
     background: transparent;
     color: rgb(255, 255, 255);
+}
+.country_select{
+    margin-left: 6px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.nav {
+    background-color: #d3e6ae;
+    padding: 20px;
+    text-align: center;
+}
+.nav a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin: 0 15px;
+    color: black;
+}
+.nav a:hover{
+    color: rgb(206, 6, 6);
+}
+#carosal{
+    background-color: #355e3b;
+    color: #d3e6ae;
+    padding: 15px;
 }
