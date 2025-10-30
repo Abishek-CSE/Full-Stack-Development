@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    background-color: #355e3b;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8PX 16px;
+    font-size: 14px;
+    
+}
+.heading p {
+    margin-left: 500px;
+    
+}
+.promo a{
+    color: white;
+    text-decoration: none;
+    margin: 0 6px;
+    margin-left: 120px;
+}
+
+.country_currency{
+    background: transparent;
+    color: rgb(255, 255, 255);
+}
