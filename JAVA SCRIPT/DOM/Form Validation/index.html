@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registration</title>
+</head>
+<body>
+    <form id="form">
+  <label>Name:</label>
+  <input type="text" id="name">
+  <p id="enter_name" class="error"></p>
+
+  <label>Email:</label>
+  <input type="text" id="YourEmail">
+  <p id="enter_email" class="error"></p>
+
+  <label>Password:</label>
+  <input type="password" id="password">
+  <p id="enter_password" class="error"></p>
+
+  <label>Age:</label>
+  <input type="number" id="age">
+  <p id="enter_age" class="error"></p>
+
+  <label>Mobile:</label>
+  <input type="text" id="mobile_number">
+  <p id="enter_mobile" class="error"></p>
+
+  <label>About You:</label>
+  <textarea id="textarea"></textarea>
+  <p id="enter_text" class="error"></p>
+
+  <label>Gender:</label>
+  <select id="gender">
+    <option value="">Select Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+  <p id="enter_gender" class="error"></p>
+
+  <button type="submit">Submit</button>
+  <script>
+    const form = document.getElementById("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const Name = document.getElementById("name").value.trim();
+  const Email = document.getElementById("YourEmail").value.trim();
+  const Password = document.getElementById("password").value.trim();
+  const Age = document.getElementById("age").value.trim();
+  const MobileNumber = document.getElementById("mobile_number").value.trim();
+  const About = document.getElementById("textarea").value.trim();
+  const Gender = document.getElementById("gender").value;
+  document.getElementById("enter_name").textContent = "";
+  document.getElementById("enter_email").textContent = "";
+  document.getElementById("enter_password").textContent = "";
+  document.getElementById("enter_age").textContent = "";
+  document.getElementById("enter_mobile").textContent = "";
+  document.getElementById("enter_text").textContent = "";
+  document.getElementById("enter_gender").textContent = "";
+  let valid = true;
+  if (Name === "") {
+    document.getElementById("enter_name").textContent = "Your name is not entered";
+    valid = false;
+  }
+  if (Email === "" || !Email.includes("@") || !Email.includes(".")) {
+    document.getElementById("enter_email").textContent = "Please enter a valid email";
+    valid = false;
+  }
+  if (Password.length < 8) {
+    document.getElementById("enter_password").textContent = "Password must be at least 8 characters";
+    valid = false;
+  }
+  if (isNaN(Age) || Age <= 18) {
+    document.getElementById("enter_age").textContent = "Age must be above 18";
+    valid = false;
+  }
+  if (MobileNumber.length !== 10 || isNaN(MobileNumber)) {
+    document.getElementById("enter_mobile").textContent = "Mobile number must be 10 digits";
+    valid = false;
+  }
+  if (About.length < 20) {
+    document.getElementById("enter_text").textContent = "Text must be at least 20 characters";
+    valid = false;
+  }
+  if (Gender === "") {
+    document.getElementById("enter_gender").textContent = "Please select gender";
+    valid = false;
+  }
+  if (valid) {
+    alert("Form submitted successfully!");
+  }
+});
+  </script>
+</form>
+</body>
+</html>
