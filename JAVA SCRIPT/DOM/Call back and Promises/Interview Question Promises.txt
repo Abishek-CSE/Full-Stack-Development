@@ -1,0 +1,86 @@
+1. What is Callback Hell?
+
+Callback Hell happens when you have multiple nested callback functions — one inside another — making the code hard to read, debug, and maintain.
+ doSomething(function(result1) {
+  doSomethingElse(result1, function(result2) {
+    moreAsyncStuff(result2, function(result3) {
+      // ...
+    });
+  });
+});
+
+2.How to Convert a Callback to a Promise ?
+
+You can wrap a callback-based function inside a Promise constructor:
+function asyncTask() {
+  return new Promise((resolve, reject) => {
+    oldCallbackFunction((error, data) => {
+      if (error) reject(error);
+      else resolve(data);
+    });
+  });
+}
+Or in modern JavaScript, use util.promisify() (in Node.js):
+const util = require('util');
+const readFile = util.promisify(fs.readFile);
+
+3.3. How to Avoid Callback Hell & What Are Promise States
+
+✅ Use Promises or async/await syntax to flatten nested callbacks.
+✅ Use modular functions and proper error handling.
+
+Promise States:
+	1.	Pending – initial state.
+	2.	Fulfilled – operation completed successfully.
+	3.	Rejected – operation failed.
+
+⸻
+
+4. What Are Promise Methods
+
+Some common Promise methods:
+	•	Promise.all() – runs multiple promises in parallel and resolves when all complete.
+	•	Promise.race() – resolves/rejects as soon as the first promise settles.
+	•	Promise.allSettled() – waits for all promises to finish, regardless of outcome.
+	•	Promise.any() – resolves as soon as the first promise fulfills.
+
+⸻
+
+5. Same as Promise Methods (Extras)
+
+You can also mention:
+	•	Promise.resolve(value) – returns a resolved promise.
+	•	Promise.reject(reason) – returns a rejected promise.
+
+⸻
+
+6. Promise Instance Methods
+
+These are used on a specific promise:
+	•	.then() – handles success.
+	•	.catch() – handles error.
+	•	.finally() – runs after promise settles (regardless of success or failure).
+
+Example:fetchData()
+  .then(data => console.log(data))
+  .catch(err => console.error(err))
+  .finally(() => console.log('Done!'));
+
+
+7.Callback Hell Resolved Methods
+
+✅ Use Promises and chain .then() methods instead of nesting callbacks.
+✅ Use async/await for even cleaner syntax:
+
+async function runTasks() {
+  try {
+    const result1 = await task1();
+    const result2 = await task2(result1);
+    console.log(result2);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+
+
