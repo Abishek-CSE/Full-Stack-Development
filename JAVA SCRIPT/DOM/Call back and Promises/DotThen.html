@@ -1,0 +1,29 @@
+<script>
+    function Mobile(){
+        return new Promise((resolve, reject) => {
+            console.log("Iphone 17 Launched");
+            resolve("It is waste")
+        })
+    }
+    function otherbrand(){
+        return new Promise((resolve)=>{
+            console.log("You can go for other Brand");
+            resolve("Samsung is better one")
+        })
+    }
+    Mobile().then(otherbrand)
+
+
+    function water(){
+        return new Promise((resolve, reject) => {
+            console.log("We wan to buy new Water Bottle");
+            resolve("No need")
+        })
+    }
+    function Bottle(){
+        return new Promise((resolve, reject) => {
+            console.log("Yes We nedd to buy Water Bottle");
+        })
+    }
+    water().then(Bottle)
+</script>
