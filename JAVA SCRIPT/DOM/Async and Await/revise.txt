@@ -1,0 +1,94 @@
+Tables : => Data Collection and Shwon as a Structured Data.
+         => Rows and Columns      ROWS = Horizontal Lines, COLUMN = Vertical Lines
+Important Tags:
+<table> => Main Container
+<tr> => Child Tag => Table Rows
+<td> => Table Data
+<th> Table Head
+<t body> => Table body
+Tables => Block Level Elements
+
+Structure of Tables:
+<table>
+  <t head>
+     <th></th>
+     <th></th>
+  </t head>
+  <t body>
+     <tr>
+        <td></td>
+        <td></td>
+     </tr>
+  </t body>
+</table>
+
+Table Attributes:
+1.Border
+2.Cell Padding => To Increase inside the content
+3.Cell Spacing => Space Creating in beetween Cell
+4.Col Span => th or td or tr => Merger Columns , One Cell Shown Multiple Column 
+5.Row Span => When one cells Covers Multiple Rows
+
+Higher  Order Array Methods:
+1. ForEach => It Execute the fucntion for each Elements and it does not return thhe value
+Syntax:
+ArrayName.foreach((current value, index, New Array)=>{
+
+})
+
+2.Map => Create a new array while appplying the function and it return the values
+Syntax:
+const Arrayname =[1,2,3,4,5,6]
+Arrayname.map((element, index, array)=>{
+
+})
+
+3.Filter => Retrun the new array that passes the condtion
+         => It return the values
+Syntax:
+const a =[1,2,3,4,5]
+a.filter((current Value, index, New Array)=>{
+
+})
+
+4. Find => Check wheather conditon is true if true meand it stops with first successful Condition
+        => Returns the first successful Elements
+
+
+5. Reduce => Reduce the array in single value 
+Syntax:
+let val = arr.reduce((accmulator ,current value, inddex, New Array)={
+
+})
+
+Fetch Function () =>Front End data to BackEnd Data and BackEnd data to Front End data 
+REST API => Front end irruthu request or Asyncronous call athuku backEnd Responsion Pannu If any Want it will Give. 
+
+DOM => Document Object Model
+Live Representation of HTMl, API Methods to handle Your HTML Structure 
+=> Main Object is Document => Key Value Pair
+=>Js Can used it to read ,modify, delete or add element dynamically
+
+DOM Selector => Accessing Methods
+.getElementById()
+.getElementByClassName()
+.getElementByTagName()
+.querySelector()
+
+Properties:
+innerHTML()
+TextContent()
+style()
+value()
+ClassList()
+SetAttributes()
+remove()
+appendChild()
+CreateElement()
+
+Event Listener()
+Mouse Event => Click, Submit, Doubleclick, MouseEnter, RightClick, MouseDown,MouseUp,MouseLeave
+KeyBoard Event => KeyDown, KeyUp, KeyPress
+Form and Input Events => Input, Change, Submit, Focus, Blur, Reset
+Window and Documnet Events => Load, DOM Content Loaded, Resize, Scroll, Before unload...
+
