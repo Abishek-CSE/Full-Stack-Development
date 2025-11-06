@@ -1,0 +1,26 @@
+<script>
+    const Run =(()=>{
+        return new Promise((resolve, reject) => {
+            setTimeout(()=>{
+                 let name =""
+            if(name){
+                resolve("Data has been Found")
+            }else{
+                reject("No Data")
+            }
+
+            },2000)
+        })
+    })
+
+    Run().then((UserData)=>{
+        console.log("The Data",UserData);
+    })
+    .catch((error)=>{
+        console.log(error);
+    })
+    .finally(()=>{
+        console.log("test");
+        
+    })
+</script>
