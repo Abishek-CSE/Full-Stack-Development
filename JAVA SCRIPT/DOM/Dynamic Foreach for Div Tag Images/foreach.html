@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Each Dynamic </title>
+</head>
+<body>
+    <div id="image">
+
+    </div>
+    <script>
+        const image = document.getElementById("image")
+        function Display (ak){
+            ak.forEach(element => {
+                const img =document.createElement("div")
+                img.className="Images"
+                img.innerHTML =`<img src='${books}
+                <h3>${name}<h3>`;
+                    image.appendChild(img)
+            });
+
+        }
+    </script>
+</body>
+</html>
