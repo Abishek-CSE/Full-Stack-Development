@@ -1,0 +1,16 @@
+<script>
+    const UserDetails = async()=>{
+        try {
+            console.log("Trying to Fetch Data, Please Wait");
+            const UserData =  await fetch("https://dummyjson.com/users")
+            const User = await UserData.json()
+            console.log(User.users);
+        } catch (error) {
+            console.error("No Data Found",error)
+        }
+        finally{
+            console.log("Process Completed");
+        }
+    }
+    UserDetails()
+</script>

@@ -1,0 +1,18 @@
+<script>
+    const Comments = async()=> {
+        try{
+        console.log("Fetching Comments  data");
+        const UserComments = await fetch("https://dummyjson.com/comments")
+        const User =  await UserComments.json()
+        console.log(User.comments);
+        }
+        catch(error){
+            console.log("Something Went Wrong",error);
+        }
+        finally{
+            console.log("Process Completed");
+            
+        }
+    }
+    Comments()
+</script>
