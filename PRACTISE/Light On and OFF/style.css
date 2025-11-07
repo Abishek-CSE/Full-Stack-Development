@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.button{
+    background-color: cadetblue;
+    color: black;
+    font-size: larger;
+    padding: 10px;
+    margin-top: 250px;
+    margin-left: 700px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease ;
+    
+}
+.button:hover{
+    background-color: aqua;
+    border-color:aqua;
+    transform: scale(1.1);
+}
+.button2{
+    background-color: cadetblue;
+    color: black;
+    font-size: larger;
+    padding: 10px;
+    margin-top: 250px;
+    margin-left: 700px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease ;
+    display: none;
+    
+}
+.button2:hover{
+    background-color: aqua;
+    border-color:aqua;
+    transform: scale(1.1);
+}
