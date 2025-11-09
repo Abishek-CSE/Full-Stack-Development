@@ -1,0 +1,56 @@
+<script>
+    //Find the large Number in an Array
+    const findLargeNumber = [12,222,34,567,780]
+    const LargeNumber = Math.max(...findLargeNumber)
+    console.log(LargeNumber);
+
+    //Reverse a Array
+    const ReverseArray =["A","B","I","S","H","E","K"]
+    const Array = ReverseArray.reverse()
+    console.log(Array);
+
+    //Reverse a String
+    const ReverseString = "KAMAL HASAN"
+    const String = ReverseString.split('').reverse().join('')
+    console.log(String);
+
+    // Find the Palindrom
+    const Word = "MALAYALAM"
+    const Find = Word.split('').reverse().join('')
+    if(Word === Find){
+        console.log("It it Palindrome",Word ,"And",Find, "Bothe are Same Words");
+    }
+    else{
+        console.log("It is not a Palindrome");
+    }
+    
+    // Count How many Vowels are presnt in string
+    let UserString ="ABISHEK"
+    let count =0
+    let Vowels =['a','e','i','o','u'] 
+    for(let find of UserString.toLowerCase()){
+        if(Vowels.includes(find)){
+            count++
+        }
+    }   
+    console.log(count);
+    
+    //Prime number or not
+    let num =11
+    let flag =false
+    for(i =2 ;i<num;i++){
+        if(num%i ==0){
+            console.log("Not a Prime");
+            flag = true
+            break
+        }
+    } 
+    if(flag == false){
+        console.log("Prime Number");
+        
+    }
+
+
+     
+    
+</script>

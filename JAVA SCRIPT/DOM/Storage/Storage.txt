@@ -1,0 +1,10 @@
+STORAGE => if You have collection of data you can store data in Local STORAGE
+JSON. Stringfy => funtion for Store values in local STORAGE.
+
+local Storage.setItem("Name of Local Storage",Changeto String data)
+
+In colsole   => Type Local Storage you can see.
+
+JSON.Parse() => String to Object
+JSON.Stringfy() => Object to String
+
