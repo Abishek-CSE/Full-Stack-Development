@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div style="margin-top:140px;" >
+            <form id="contactForm" class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" id="Name" required>
+            <input type="email" name="email" placeholder="Your Email" id="Email "required>
+            <input type="text" name="city" placeholder="Your City" id="City" required>
+            <textarea name="message" placeholder="Your Problem" id="Problem" rows="6" required></textarea>
+            <button type="submit" class="button">Submit Message</button>
+  </form>
+        </div>
+    </section>
+    <script>
+        const myform = document.getElementById("contactForm")
+        myform.addEventListener("submit",(e)=>{
+            e.preventDefault()
+            const Name = document.getElementById("Name")
+            const Email = document.getElementById("Email")
+            const City = document.getElementById("City")
+            const Problem = document.getElementById("Problem")
+
+            const UserDetails = JSON.parse(localStorage.getItem("UserProblem")) || []
+
+            const StoreValue = {Name,Email,City,Problem}
+            UserDetails.push(StoreValue)
+            localStorage.setItem("UserProblem",JSON.stringify(UserDetails))
+
+        })
+    </script>
+</body>
+</html>
