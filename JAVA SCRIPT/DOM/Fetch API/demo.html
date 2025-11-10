@@ -1,0 +1,17 @@
+<script>
+    const fun = async()=>{
+        try{
+            console.log("Going to Fetch the Data:");
+            const userData =await fetch('https://dummyjson.com/users')
+            const user = await userData.json()
+            console.log(user.users);
+        }
+        catch(error){
+            console.log("Something Went Wrong Plase try after Sometimes",error);
+            
+        }finally{
+            console.log("Successfully Data Fetched");
+        }
+    }
+    fun()
+</script>

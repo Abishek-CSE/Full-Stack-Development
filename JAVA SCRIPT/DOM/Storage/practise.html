@@ -1,0 +1,17 @@
+<script>
+    localStorage.setItem('Name','AK')
+    localStorage.setItem('age',21)
+
+    const user ={Name:"Abishek",age:22,Course:"Full Stack Development"}
+    localStorage.setItem("Abishek Details",JSON.stringify(user))
+    localStorage.setItem('Name','Abi')
+    let Details =localStorage.getItem('USERDETAILS')
+    console.log(Details);
+    console.log(localStorage.key(2));
+    console.log(localStorage.length);
+    localStorage.clear()
+    
+    
+    
+    
+</script>
