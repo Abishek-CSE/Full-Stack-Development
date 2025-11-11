@@ -1,39 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMS</title>
+    <title>form creation</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section>
-        <div style="margin-top:140px;" >
-            <form id="contactForm" class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" id="Name" required>
-            <input type="email" name="email" placeholder="Your Email" id="Email "required>
-            <input type="text" name="city" placeholder="Your City" id="City" required>
-            <textarea name="message" placeholder="Your Problem" id="Problem" rows="6" required></textarea>
-            <button type="submit" class="button">Submit Message</button>
-  </form>
-        </div>
-    </section>
+
+    <form>
+        <center>
+            <div class="form">
+
+                <div class="name">
+                    <label>Enter your Name</label>
+                    <input type="text" placeholder="Enter your Name" id="name">
+                </div>
+
+                <div class="mobile">
+                    <label>Enter your Mobile No</label>
+                    <input type="tel" placeholder="Enter your Mobile" id="Mobile">
+                </div>
+
+                <div class="password">
+                    <label>Enter your Password</label>
+                    <input type="password" placeholder="Enter your Password" id="password">
+                </div>
+
+                <div class="email">
+                    <label>Enter your Email</label>
+                    <input type="email" placeholder="Enter your Email" id="email">
+                </div>
+
+                <div class="submit">
+                    <button id="submit">Register</button>
+                </div>
+
+            </div>
+       
+    </form>
+    <body>
+    <table id="datatable">
+        <thead border="3">
+            <th>sno</th>
+            <th>name</th>
+            <th>mobile</th>
+            <th>password</th>
+            <th>email</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+    </body>
+
     <script>
-        const myform = document.getElementById("contactForm")
-        myform.addEventListener("submit",(e)=>{
-            e.preventDefault()
-            const Name = document.getElementById("Name")
-            const Email = document.getElementById("Email")
-            const City = document.getElementById("City")
-            const Problem = document.getElementById("Problem")
+       const submit = document.getElementById("submit");
 
-            const UserDetails = JSON.parse(localStorage.getItem("UserProblem")) || []
+submit.addEventListener("click", (e) => {
+    e.preventDefault();
 
-            const StoreValue = {Name,Email,City,Problem}
-            UserDetails.push(StoreValue)
-            localStorage.setItem("UserProblem",JSON.stringify(UserDetails))
+    const name = document.getElementById("name").value;
+    const mobile = document.getElementById("Mobile").value;
+    const password = document.getElementById("password").value;
+    const email = document.getElementById("email").value;
 
-        })
+    let data = JSON.parse(localStorage.getItem("form")) || [];
+
+    data.push({ name, mobile, password, email });
+
+    localStorage.setItem("form", JSON.stringify(data));
+
+    document.querySelector("form").reset();
+    showData();
+});
+
+function showData() {
+    let data = JSON.parse(localStorage.getItem("form")) || [];
+    const tablebody = document.querySelector("#datatable tbody");
+
+    tablebody.innerHTML = ""; 
+
+    data.forEach((item, index) => {
+        tablebody.innerHTML += `
+        <tr>
+            <td>${index + 1}</td>
+            <td>${item.name}</td>
+            <td>${item.mobile}</td>
+            <td>${item.password}</td>
+            <td>${item.email}</td>
+        </tr>`;
+    });
+}
+
+showData();
+
+
     </script>
+
 </body>
+
 </html>

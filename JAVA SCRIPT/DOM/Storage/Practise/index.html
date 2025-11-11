@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin-top: 50px;">
+    <h1 style="text-align: center;">USER DEATILS</h1>
+     <form id="Form" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required id="name">
+    <input type="email" name="email" placeholder="Your Email" required id="email">
+    <input type="phone" name="Number" placeholder="Your Number" required id="number">
+    <textarea name="message" placeholder="Your Problem" rows="6" required id="message"></textarea>
+    <button type="submit" class="button" id="button">Send Message</button>
+  </form>
+    <table id="datatable" >
+        <thead border="3">
+            <th>SERIAL NUMBER</th>
+            <th>NAME</th>
+            <th>EMAIL ADDRESS</th>
+            <th>PHONE NUMBER</th>
+            <th>YOUR PROBLEM MESSAGE</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+ <script>
+const form = document.getElementById("Form");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const number = document.getElementById("number").value;
+    const message = document.getElementById("message").value;
+
+    let UserDetails = JSON.parse(localStorage.getItem("form")) || [];
+    UserDetails.push({ name, email, number, message });
+    localStorage.setItem("form", JSON.stringify(UserDetails));
+
+    form.reset();
+    showData();
+});
+
+function showData() {
+    let data = JSON.parse(localStorage.getItem("form")) || [];
+    const tablebody = document.querySelector("#datatable tbody");
+    tablebody.innerHTML = "";
+
+    data.forEach((item, index) => {
+        tablebody.innerHTML += `
+        <tr>
+            <td>${index + 1}</td>
+            <td>${item.name}</td>
+            <td>${item.email}</td>
+            <td>${item.number}</td>
+            <td>${item.message}</td>
+        </tr>`;
+    });
+}
+
+showData();
+</script>
+
+</body>
+</html>

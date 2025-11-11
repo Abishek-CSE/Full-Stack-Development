@@ -1,0 +1,20 @@
+const users = [
+  { name: "Alice", job: "Designer", img: "https://via.placeholder.com/100/ffb6c1" },
+  { name: "Bob", job: "Developer", img: "https://via.placeholder.com/100/87cefa" },
+  { name: "Charlie", job: "Manager", img: "https://via.placeholder.com/100/90ee90" }
+];
+
+const container = document.getElementById("card-container");
+
+users.forEach(user => {
+  const card = document.createElement("div");
+  card.classList.add("card");
+
+  card.innerHTML = `
+    <img src="${user.img}" alt="${user.name}">
+    <h3>${user.name}</h3>
+    <p>${user.job}</p>
+  `;
+
+  container.appendChild(card);
+});
