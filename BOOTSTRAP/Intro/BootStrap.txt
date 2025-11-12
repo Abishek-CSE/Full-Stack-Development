@@ -67,3 +67,41 @@ scope ="row"
 Accented Table:
 class="table table-striped"  => Zebra line box 
 class="table table-dark table-striped" =>We can give any Color.
+
+Important Topics:
+Carousal
+Collapse
+Button
+BreadCrumb
+Cards
+DropDown
+Modal
+Navbar
+Toaster
+Sweet Alert
+Alert
+ToolTip
+BackGround
+Border
+Flex
+Positining
+Shadow
+sizing
+spacing
+Extended Icons => Font Awasome Website
+LAyout => Z-index, Grid ,Container, BreakPoints
+forms
+
+
+
+Improve :
+1.Object
+2.Varaiable Beharivours
+3. NEsted Object
+4. Array and Array of Object
+5. how to use dot Notation accessing
+6.Function => 3 types
+7. Array Methods
+8.Call back Function
+9.Closures
+10. File Haandling
