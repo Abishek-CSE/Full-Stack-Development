@@ -10,9 +10,10 @@
       crossorigin="anonymous"
     />
     <title>Inside Chennai</title>
-    <link rel="stylesheet" href="Assets/Css/style.css">
+    <link rel="stylesheet" href="Assets/Css/style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <nav>
         <div class="bg-black text-white d-flex justify-content-between p-3">
@@ -21,219 +22,413 @@
           </div>
           <div class="d-flex gap-5 mt-2 ">
             <a href="#home" class="text-white text-decoration-none">HOME</a>
-            <a href="#chennai'sLife" class="text-white text-decoration-none"
-              >CHENNAI LIFE</a
-            >
-            <!--<a href="" class="text-white text-decoration-none">THE HUSTLE</a>-->
-            <a href="#Stories" class="text-white text-decoration-none"
-              >STORIES OF HOPE</a
-            >
+            <a href="#chennaiLife" class="text-white text-decoration-none">CHENNAI LIFE</a>
+            <a href="#Stories" class="text-white text-decoration-none">STORIES OF HOPE</a>
             <a href="#connect" class="text-decoration-none text-white">CONNECT</a>
-            <button  id="Login"class="btn btn-warning">Login</button>
+            <button id="Login" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
           </div>
         </div>
       </nav>
     </header> 
-    <!---home--->
+
+    <!-- Home -->
     <main id="home">
       <div class="text-center bg-secondary p-5">
-        <div>
-          <h1 class="display-5 fw-bold text-white">Under the Chennai Sun</h1>
-          <p class="text-white">
-            In the city's heat, many people work hard for a better future. This
-            is their Story of hard work nad Courage
-          </p>
-        </div>
-       <a href="#Stories" class="btn btn-warning mt-3">Read the Stories</a>
+        <h1 class="display-5 fw-bold text-white">Under the Chennai Sun</h1>
+        <p class="text-white">
+          In the city's heat, many people work hard for a better future. This is their story of hard work and courage.
+        </p>
+        <a href="#Stories" class="btn btn-warning mt-3">Read the Stories</a>
       </div>
     </main>
-    <marquee class="bg-lighth">From IT employees to auto drivers, Chennai people work tirelessly under the scorching sun! Street vendors and construction workers keep Chennai moving — their hard work never stops!</marquee>
-    <!----Card-->
-    <section class="py-5 bg-light" id="chennai'sLife">
+
+    <marquee class="bg-light">
+      From IT employees to auto drivers, Chennai people work tirelessly under the scorching sun! Street vendors and construction workers keep Chennai moving — their hard work never stops!
+    </marquee>
+
+    <!-- Chennai Life -->
+    <section class="py-5 bg-light" id="chennaiLife">
       <div class="container text-center">
         <h2 class="fw-bold mb-5">Chennai Life</h2>
         <p class="text-secondary mb-5">
-          This City Never stops - from busy morning to peaceful nights, Chennai
-          is full of life, dreams, and determination.
+          This city never stops — from busy mornings to peaceful nights, Chennai is full of life, dreams, and determination.
         </p>
         <div class="row g-4">
-          <div class="col-4">
-            <a href="" class="text-decoration-none text-dark">
-              <div class="card h-100">
-                <img
-                  src="Assets/Images/Daily Commute.jpg"
-                  alt="Daily Commute"
-                />
-                <div>
-                  <h5 class="card-title text-warning fw-bold">Daily Commute</h5>
-                  <p class="card-text">
-                    People travel miles each day by Bus, Train, and Bike
-                    -Chasing Opportunities unser the Chennai Sun.
-                  </p>
-                  <button class="btn btn-warning">Explore More</button>
-                </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <img src="Assets/Images/Daily Commute.jpg" class="card-img-top" alt="Daily Commute" />
+              <div class="card-body">
+                <h5 class="card-title text-warning fw-bold">Daily Commute</h5>
+                <p class="card-text">
+                  People travel miles each day by bus, train, and bike — chasing opportunities under the Chennai sun.
+                </p>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#dailyCommuteModal">
+            Explore More
+          </button>
               </div>
-            </a>
-          </div>
-          <div class="col-4">
-            <a href="" class="text-decoration-none text-dark">
-              <div class="card h-100">
-                <img
-                  src="Assets/Images/Work & Hustle.jpg"
-                  alt="Work and Hustle"
-                />
-                <div>
-                  <h5 class="card-title text-warning fw-bold">Work & Hustle</h5>
-                  <p class="card-text">
-                    From IT hubs to Street Markets, Chennai's people work hard
-                    every single day to build their dreams.
-                  </p>
-                  <button class="btn btn-warning">Explore More</button>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-4">
-            <a href="" class="text-decoration-none text-dark">
-              <div class="card h-100">
-                <img src="Assets/Images/Simple Joy.jpg" alt="Work and Hustle" />
-                <div>
-                  <h5 class="card-title text-warning fw-bold">Simple Joys</h5>
-                  <p class="card-text">
-                    A cup of filter coffee, beach walks, and laughter-small
-                    things that make Chennai Special.
-                  </p>
-                  <button class="btn btn-warning mb-4">Explore More</button>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Stories of Hope-->
-    <section id="Stories">
-      <div class="bg-light">
-        <h2 class="fw-bold mb-5 text-black text-center">Stories of HOPE</h2>
-        <p class="text-secondary mb-5 text-center">
-          The Everyday fights, efforts, and spirit of Chennai's hardworking
-          people
-        </p>
-      </div>
-      <section class="mt-3">
-        <div
-          class="bg-secondary p-5 d-flex justify-content-around align-items-center"
-        >
-          <div class="text-white container p-5">
-            <h3 class="text-warning">AUTO DRIVER</h3>
-            <p>
-              From sunrise to midnight, Chennai's auto drivers navigate every
-              street, rain or shine. They carry stories, smiles, and the
-              heartbeat of the city with every ride. They work all day in traffic and heat, but still find it hard to earn enough for their families.
-            </p>
-            <button class="btn btn-warning">Support</button>
-          </div>
-          <div class="text-white container card">
-            <img
-              src="Assets/Images/Auto Driver.jpg"
-              class="rounded"
-              alt="Auto Driver"
-            />
-          </div>
-        </div>
-      </section >
-       <section>
-        <div class="bg-light p-5 d-flex justify-content-around align-items-center">
-           <div class="text-white container card">
-            <img
-              src="Assets/Images/Street Vendor.jpg"
-              class="rounded float-start"
-              alt="Steet"
-            />
-          </div>
-          <div class="text-secondary p-5 d-flex flex-column justify-content-center align-items-start">
-            <h3 class=" text-warning">STREET VENDOR</h3>
-            <p>
-              They fill the city with colors, voices, and life — selling food, flowers, and dreams.
-               Through heat and crowd, their energy keeps Chennai alive. They sell things on the streets with hope, but live in fear of losing their spot and their only income.
-            </p>
-            <button class="btn btn-warning ">Support</button>
-          </div>
-        </div>
-      </section>
-      <section class="mt-3">
-        <div
-          class="bg-secondary p-5 d-flex justify-content-around align-items-center"
-        >
-          <div class="text-white container p-5">
-            <h3 class="text-warning">IT PROFESSIONALS</h3>
-            <p>
-              They chase deadlines, solve problems, and innovate — often from sunrise till midnight.
-          Their energy powers the digital face of Chennai. They have good jobs, but too much stress and no time to rest or enjoy life.
-            </p>
-            <button class="btn btn-warning">Support</button>
-          </div>
-          <div class="text-white container card">
-            <img
-              src="Assets/Images/IT.webp"
-              class="rounded"
-              alt="IT"
-            />
-          </div>
-        </div>
-      </section >
-      <section>
-        <div class="bg-light p-5 d-flex justify-content-around align-items-center">
-           <div class="text-white container card">
-            <img
-              src="Assets/Images/Construction.webp"
-              class="rounded float-start"
-              alt="Steet"
-            />
-          </div>
-          <div class="text-secondary p-5 d-flex flex-column justify-content-center align-items-start">
-            <h3 class=" text-warning">CONSTRUCTION WORKERS</h3>
-            <p>Brick by brick, they raise the skyline of Chennai. Their hard work stands tall, even when they remain unseen.
-              They build our homes and roads, but their hard work is often ignored and poorly paid.
-            </p>
-            <button class="btn btn-warning ">Support</button>
-          </div>
-        </div>
-      </section>
-    </section>
-    <!-----Connect-->
-    <section id="connect">
-      <div class="bg-secondary">
-        <h2 class="fw-bold text-white text-center">Connect With Us</h2>
-        <p class="text-light mb-5 text-center">
-          Have a Story to share or You Want to Support Chennai's hardworking people ?
-          We'd lovw to hear from You.
-        </p>
-      <div class="bg-secondary"> 
-          <div class="d-flex justify-content-center">
-            <div class=" bg-secondary p-3 w-50">
-              <form >
-                <div class="text-center mt-4">
-                  <label class="form-label text-light">Enter your Name</label>
-                  <input type="text" placeholder="Your Name" class="form-control">
-                </div>
-                <div class="text-center mt-4">
-                  <label class="form-label text-light">Your Profession</label>
-                  <input type="text" placeholder="Your Profession" class="form-control">
-                </div>
-                <div class="text-center mt-4">
-                  <label class="form-label text-light ">Your Story</label>
-                  <textarea placeholder="Your Story" class="form-control"></textarea>
-                </div>
-                <div class="text-center mt-4">
-                  <button class="btn btn-warning">Submit Your Story</button>
-                </div>
-              </form>
             </div>
           </div>
-      </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <img src="Assets/Images/Work & Hustle.jpg" class="card-img-top" alt="Work and Hustle" />
+              <div class="card-body">
+                <h5 class="card-title text-warning fw-bold">Work & Hustle</h5>
+                <p class="card-text">
+                  From IT hubs to street markets, Chennai's people work hard every single day to build their dreams.
+                </p>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#workHustleModal">
+            Explore More
+          </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100">
+              <img src="Assets/Images/Simple Joy.jpg" class="card-img-top" alt="Simple Joy" />
+              <div class="card-body">
+                <h5 class="card-title text-warning fw-bold">Simple Joys</h5>
+                <p class="card-text">
+                  A cup of filter coffee, beach walks, and laughter — small things that make Chennai special.
+                </p>
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#simpleJoysModal">
+            Explore More
+          </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- Stories of Hope -->
+    <section id="Stories">
+      <div class="bg-light text-center p-5">
+        <h2 class="fw-bold text-black">Stories of HOPE</h2>
+        <p class="text-secondary">
+          The everyday fights, efforts, and spirit of Chennai's hardworking people.
+        </p>
+      </div>
+
+      <div class="bg-secondary p-5 d-flex flex-wrap justify-content-around align-items-center">
+        <div class="text-white p-3" style="max-width: 500px;">
+          <h3 class="text-warning">AUTO DRIVER</h3>
+          <p>
+            From sunrise to midnight, Chennai's auto drivers navigate every street, rain or shine. They carry stories, smiles, and the heartbeat of the city with every ride.
+          </p>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#autoDriverModal">
+            Read More
+          </button>
+        </div>
+        <img src="Assets/Images/Auto Driver.jpg" class="rounded" alt="Auto Driver" style="max-width: 400px;">
+      </div>
+
+      <div class="bg-light p-5 d-flex flex-wrap justify-content-around align-items-center">
+        <img src="Assets/Images/Street Vendor.jpg" class="rounded" alt="Street Vendor" style="max-width: 400px;">
+        <div class="text-secondary p-3" style="max-width: 500px;">
+          <h3 class="text-warning">STREET VENDOR</h3>
+          <p>
+            They fill the city with colors, voices, and life — selling food, flowers, and dreams.
+            Through heat and crowds, their energy keeps Chennai alive.
+          </p>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#streetVendorModal">
+            Read More
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-secondary p-5 d-flex flex-wrap justify-content-around align-items-center">
+        <div class="text-white p-3" style="max-width: 500px;">
+          <h3 class="text-warning">IT PROFESSIONALS</h3>
+          <p>
+            They chase deadlines, solve problems, and innovate — often from sunrise till midnight. Their energy powers the digital face of Chennai.
+          </p>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#itModal">
+            Read More
+          </button>
+        </div>
+        <img src="Assets/Images/IT.webp" class="rounded" alt="IT" style="max-width: 400px;">
+      </div>
+
+      <div class="bg-light p-5 d-flex flex-wrap justify-content-around align-items-center">
+        <img src="Assets/Images/Construction.webp" class="rounded" alt="Construction Workers" style="max-width: 400px;">
+        <div class="text-secondary p-3" style="max-width: 500px;">
+          <h3 class="text-warning">CONSTRUCTION WORKERS</h3>
+          <p>
+            Brick by brick, they raise the skyline of Chennai. Their hard work stands tall, even when they remain unseen.
+          </p>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#constructionModal">
+            Read More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect -->
+    <section id="connect" class="bg-secondary text-center text-light p-5">
+      <h2 class="fw-bold">Connect With Us</h2>
+      <p>
+        Have a story to share or want to support Chennai's hardworking people? We'd love to hear from you.
+      </p>
+      <div class="d-flex justify-content-center">
+        <form class="bg-secondary p-3 w-50" id="Myform"> 
+          <div class="mb-3">
+            <label class="form-label text-light">Enter your Name</label>
+            <input type="text" placeholder="Your Name" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-light">Your Profession</label>
+            <input type="text" placeholder="Your Profession" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-light">Your Story</label>
+            <textarea placeholder="Your Story" class="form-control"></textarea>
+          </div>
+          <button class="btn btn-warning " id="YourStoryButton">Submit Your Story</button>
+        </form>
+      </div>
+    </section>
+    <!-- Daily Commute Modal -->
+<div class="modal fade" id="dailyCommuteModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="dailyCommuteLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="dailyCommuteLabel">Daily Commute in Chennai</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        People in Chennai commute miles every day via buses, trains, bikes, and cars. They face traffic jams, crowded vehicles, and long hours on the road. Yet, each commute is a story of perseverance, balancing work, family, and dreams.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Work & Hustle Modal -->
+<div class="modal fade" id="workHustleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="workHustleLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="workHustleLabel">Work & Hustle in Chennai</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        From IT offices to street markets, people in Chennai hustle daily. They balance multiple jobs, deadlines, and responsibilities. Despite challenges like heat, traffic, and long hours, their determination keeps the city thriving.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Simple Joys Modal -->
+<div class="modal fade" id="simpleJoysModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="simpleJoysLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="simpleJoysLabel">Simple Joys of Chennai</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Chennai life is full of small joys — sipping filter coffee, walking on the beach, enjoying local food, and sharing laughter with friends. These moments bring balance to the city's busy rhythm and remind people to cherish life’s simple pleasures.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-light">
+          <div class="modal-header bg-warning">
+            <h5 class="modal-title" id="loginModalLabel">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" id="loginEmail" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" id="loginPassword" class="form-control" required />
+              </div>
+              <button type="submit" class="btn btn-warning w-100">Login</button>
+            </form>
+            <p class="mt-3 text-center">Don't have an account? 
+              <a href="#" id="showRegister">Register here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-light">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="registerModalLabel">Register</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="registerForm">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" id="registerName" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" id="registerEmail" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" id="registerPassword" class="form-control" required />
+          </div>
+          <button type="submit" class="btn btn-warning w-100">Register</button>
+        </form>
+        <p class="mt-3 text-center">Already have an account?
+          <a href="#" id="showLogin">Login here</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Auto Driver Modal -->
+<div class="modal fade" id="autoDriverModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="autoDriverLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="autoDriverLabel">Struggles of Auto Driver</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Auto drivers wake up early in the morning to start their day.
+        They drive all day under the hot sun or heavy rain.
+        Traffic jams make their work slow and tiring.
+        Sometimes they don’t get enough passengers and earn very little.
+        Fuel and repair costs take away a big part of their money.
+        They face rude or troublesome passengers sometimes.
+        Long hours make them feel very tired and sick.
+        They worry about accidents and their safety every day.
+        Even though they work hard, many people do not respect them.
+        Still, they keep driving, hoping to feed their families.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Street Vendor Modal -->
+<div class="modal fade" id="streetVendorModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="streetVendorLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="streetVendorLabel">Struggles of Street Vendor</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Street vendors wake up early to prepare their goods.
+        They work under the scorching sun and heavy rain every day.
+        Competition is tough and not everyone buys from them.
+        They often carry heavy loads and stand for hours.
+        Sometimes they face harassment from authorities or crowds.
+        Their earnings are unstable and unpredictable.
+        Long working hours make them physically exhausted.
+        Despite hardships, they keep selling to feed their families.
+        They rarely get recognition for their hard work.
+        Their spirit keeps Chennai lively and colorful.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- IT Professionals Modal -->
+<div class="modal fade" id="itModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="itLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="itLabel">Struggles of IT Professionals</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        IT professionals start their day early and often work late into the night.
+        They face tight deadlines and constant pressure to perform.
+        Problem-solving and coding errors can be mentally exhausting.
+        Meetings and client demands add to their stress.
+        Long screen time affects their health and eyes.
+        Work-life balance is hard to maintain.
+        They constantly need to upgrade their skills to stay relevant.
+        Despite challenges, they keep innovating and contributing to the city’s growth.
+        Recognition is limited, but their work impacts millions.
+        Their dedication drives Chennai’s digital world.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Construction Workers Modal -->
+<div class="modal fade" id="constructionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="constructionLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="constructionLabel">Struggles of Construction Workers</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Construction workers start early in the morning, carrying heavy loads.
+        They work under extreme heat, rain, and dust daily.
+        The job is physically demanding and exhausting.
+        Safety risks are high, and accidents are common.
+        Wages are often low and inconsistent.
+        They rarely get recognition for their hard work.
+        Long hours take a toll on their health.
+        Despite challenges, they keep building the city.
+        They dream of a better life for their families.
+        Their effort raises Chennai’s skyline, brick by brick.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-2 mb-md-0">
+        &copy; 2025 Inside Chennai. All Rights Reserved.
+      </div>
+      <div>
+        <a href="#home" class="text-light text-decoration-none mx-2">Home</a>
+        <a href="#chennaiLife" class="text-light text-decoration-none mx-2">Chennai Life</a>
+        <a href="#Stories" class="text-light text-decoration-none mx-2">Stories</a>
+        <a href="#connect" class="text-light text-decoration-none mx-2">Connect</a>
+      </div>
+    </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="Assets/JS/script.js"></script>
   </body>
 </html>
+
+
+
+
+
