@@ -1,5 +1,4 @@
-const Register = document.getElementById("showRegister")
-const Login = document.getElementById("Login") // now points to header login button
+
 const LoginModal = document.getElementById("loginModal")
 const RegisterModal = document.getElementById("registerModal")
 
@@ -60,7 +59,7 @@ LoginForm.addEventListener("submit", (e) => {
 
     if (Email === SavedUserEmail && Password === SavedUserPassword) {
         alert("Login Successful!")
-        Login.style.display = 'none'  // hides the header login button
+        Login.style.display = 'none'  
         loginModals.hide()
     } else {
         alert("Invalid Email or Password")
