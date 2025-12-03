@@ -1,0 +1,92 @@
+CREATE DATABASE SHOPPING;
+USE SHOPPING;
+
+CREATE TABLE CUSTOMERS(
+CUSTOMER_ID INT PRIMARY KEY,
+CUSTOMER_NAME VARCHAR(50),
+CUSTOMER_PHONE VARCHAR(20)
+);
+
+CREATE TABLE PRODUCTS(
+PRODUCT_ID INT PRIMARY KEY,
+PRODUCT_NAME VARCHAR(50),
+PRODUCT_PRICE INT 
+);
+
+CREATE TABLE ORDERS(
+ORDER_ID INT PRIMARY KEY,
+CUSTOMER_ID INT,
+PRODUCT_ID INT,
+ORDER_DATE DATE,
+FOREIGN KEY (CUSTOMER_ID) REFERENCES CUSTOMERS(CUSTOMER_ID),
+FOREIGN KEY (PRODUCT_ID) REFERENCES PRODUCTS(PRODUCT_ID)
+);
+
+INSERT INTO CUSTOMERS VALUES(101,"AK","93360518517"),(102,"VIRAT KHOLI","7869859081"),(103,"RUTHURAJ",'8756893401'),(104,'ROHIT SHARMA','9862314560'),
+(105,'DHONI','7897687701');
+
+SELECT * FROM CUSTOMERS;
+
+INSERT INTO products VALUES
+(1, 'LAPTOP', 55000),
+(2, 'GAMING MOUSE', 1500),
+(3, 'KEYBOARD', 1200),
+(4, 'MOBILE PHONE', 18000),
+(5, 'HEADPHONE', 1500);
+
+INSERT INTO orders VALUES
+(1, 101, 1, '2025-01-01'),
+(2, 102, 3, '2025-01-03'),
+(3, 101, 2, '2025-01-05'),
+(4, 104, 5, '2025-01-10'),
+(5, 103, 1, '2025-01-12');
+
+
+CREATE TABLE STUDENTS (
+    STUDENT_ID INT PRIMARY KEY,
+    STUDENT_NAME VARCHAR(100)
+);
+CREATE TABLE COURSES (
+    COURSE_ID INT PRIMARY KEY,
+    COURSE_NAME VARCHAR(100),
+    TEACHER VARCHAR(100)
+);
+
+CREATE TABLE STUDENT_DATAILS(
+ID INT PRIMARY KEY,
+STUDENT_ID INT,
+COURSE_ID INT,
+FOREIGN KEY (STUDENT_ID) REFERENCES STUDENTS(STUDENT_ID),
+FOREIGN KEY(COURSE_ID) REFERENCES COURSES(COURSE_ID)
+);
+
+SELECT c.customer_name, p.product_name, o.order_date
+FROM orders o
+INNER JOIN customers c ON o.customer_id = c.customer_id
+INNER JOIN products p ON o.product_id = p.product_id;
+
+SELECT p.product_name, p.product_price, COUNT(o.order_id) AS total_orders
+FROM products p
+INNER JOIN orders o ON p.product_id = o.product_id
+GROUP BY p.product_name, p.product_price;
+
+SELECT c.customer_name, o.order_id
+FROM customers c
+LEFT JOIN orders o ON c.customer_id = o.customer_id;
+
+SELECT p.product_name, o.order_id
+FROM products p
+LEFT JOIN orders o ON p.product_id = o.product_id;
+
+SELECT c.customer_name, o.order_id
+FROM customers c
+RIGHT JOIN orders o ON c.customer_id = o.customer_id;
+
+SELECT p.product_name, o.order_id
+FROM products p
+RIGHT JOIN orders o ON p.product_id = o.product_id;
+
+
+
+
+
